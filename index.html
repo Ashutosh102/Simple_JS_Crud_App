@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CDN Bootstrap CSS V5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title> CRUD Javascript</title>
+</head>
+
+<body style="background-color: #003f3f; color: gray;">
+    <div class="container">
+    	<center><h2>CRUD Functions</h2></center>
+        <div class="row">
+            <div class="col-10 offset-1">
+                <h6>Add New Student</h6>
+                <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                    <input type="text" id="add-name" class="form-control" placeholder="New City">
+                </form>
+
+                <div id="spoiler" role="aria-hidden">
+                    <h6>Edit Here</h6>
+                    <form action="javascript:void(0);" method="POST" id="saveEdit">
+                        <input type="text" id="edit-name" class="form-control">
+                    </form>
+                </div>
+
+                <p id="counter"></p>
+
+                <table class="table" style="color: #fff;">
+                    <thead>
+                        <tr>
+                            <th scope="col">Student</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="kota">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="./js/script.js"></script>
+
+<!-- CDN Bootstrap Js V5.0 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
